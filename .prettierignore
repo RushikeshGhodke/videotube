@@ -1,0 +1,14 @@
+# Ignore built files
+build/
+dist/
+out/
+
+# Ignore vendored code
+node_modules/
+
+# Ignore configuration files
+.prettierignore
+.eslintrc
+
+# Ignore VS Code settings
+.vscode/

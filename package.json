@@ -1,0 +1,24 @@
+{
+  "name": "chai-and-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json--modules src/index.js"
+  },
+  "author": "Rushikesh Ghodke",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3",
+    "prettier": "^3.3.2"
+  }
+}
