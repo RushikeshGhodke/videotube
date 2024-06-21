@@ -49,7 +49,8 @@ const userSchema = new Schema(
 
 userSchema.pre("save", async function (next) {
   if (!this.isModified(this.password)) return next();
-  this.password = bcrypt(this.password, 10);
+  this.password = await bcrypt(this.password, 10);
+  next();
 });
 
 userSchema.methods.generateAccessToken = function () {
